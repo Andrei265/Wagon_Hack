@@ -1,0 +1,34 @@
+{% extends "base_generic.html" %}
+
+{% block content %}
+{% load static %}
+    <img src="{% static "images/toys.svg" %}" alt="toys" class="toys" width="600px">
+    <script>
+        function script1() {
+            <py-script>
+                import script1
+                await asyncio.sleep(5)
+                asyncio.ensure_future(script1.main())
+            </py-script>|
+        }
+    </script>
+    <div class="header">
+        <h1 class="header-header">Новогоднее волшебство</h1>
+        <p class="header-text">
+            На данной странице вы можете загрузить аудиофайл, который
+            преобразуется в текстовый файл csv! Если это не магия нового
+            года и немного программирования, тогда что?
+        </p>
+    </div>
+    <div class="tech">
+        <form enctype="multipart/form-data" method="POST">
+            {% csrf_token %}
+            {{ form.as_p }}
+            <button class="tech-input">Загрузить аудиофайл</button>
+            <input type="file" name="f" class="tech-input-hide" accept="audio/*"/>
+            <input type="submit" value="Отправить" class="tech-send" onclick=script1()/>
+            <a class="download-link" href="{% static "../media/result/output.xlsx" %}" download>Download link</a>
+        </form>
+    </div>
+    <img src="{% static "images/presents.svg" %}" alt="presents" class="presents-img" width="600px">
+{% endblock %}
