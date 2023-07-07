@@ -1,0 +1,95 @@
+.sidebar-nav {
+    margin-top: 20px;
+    padding: 0;
+    list-style: none;
+}
+
+.header {
+    /* font-family: "DM Serif Display", serif; */
+    /* font-family: "Rubik Storm", cursive; */
+    color: white;
+}
+
+body {
+    /*width: 2500px;
+    /*height: 3000px; */
+    background-color: #b92b39;
+    font-family: "Rubik Storm", cursive;
+    border-radius: 50px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
+}
+
+button {
+    font-family: "Rubik Storm", cursive;
+}
+
+.main {
+    margin: 15vh 20vw 0 20vw;
+}
+
+.tech {
+    /* display: flex; */
+    /* margin: 0 auto; */
+    text-align: center;
+    margin-left: 20%;
+    margin-right: 20%;
+    /* justify-content: space-between; */
+    /* align-items: center; */
+    margin-top: 10vh;
+}
+
+.tech-input {
+    position: relative;
+    border: 2px solid black;
+    padding: 20px;
+    height: 60px;
+    background-color: #303e4e;
+    font-family: "Rubik Storm", cursive;
+    color: white;
+}
+
+.tech-input-hide {
+    position: absolute;
+    opacity: 1;
+    padding: 10px;
+    height: 40px;
+    width: 165px;
+    background-color: cyan;
+    font-family: "Rubik Storm", cursive;
+    margin-left: -190px;
+    color: white;
+}
+
+.tech-send {
+    padding: 20px;
+    height: 60px;
+    margin-left: 40px;
+    background-color: #303e4e;
+    font-family: "Rubik Storm", cursive;
+    color: white;
+}
+
+.presents-img {
+    position: fixed;
+    height: 70%;
+    bottom: 1px;
+    right: 1px;
+    z-index: -1;
+}
+
+.silence-img {
+    height: 300px;
+}
+
+.toys {
+    width: 100%;
+    margin-bottom: -200px;
+}
+
+.sidebar-nav a{
+    text-decoration: none;
+    color:white;
+}
